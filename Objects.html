@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Objects in Javascript</h1>
+    <h3 id = 't1'></h3>
+    <h3 id = 't2'></h3>
+    <h3 id = 't3'></h3>
+    <h3 id = 't4'></h3>
+    <h3 id = 't5'></h3>
+    <h3 id = 't6'></h3>
+    <h3 id = 't7'></h3>
+    <script>
+        var a = {name: 'Renesha', class: 11, student: true};
+        document.getElementById('t1').innerHTML = 'Hi' + ' '+ a.name+ ' ' + 'Nice to meet you. I heard that you are a student studying in class' + ' '+ a.class + ' ?' + a.student ; 
+        var value1 = Math.asin(90)
+        document.getElementById('t2').innerHTML = 'The value of sin 90 degree is ' + value1;
+        var value2 = Math.acos(1);
+        document.getElementById('t3').innerHTML = 'The value of cos 1 degree is  ' + value2;
+        var value3 = Math.atan(30);
+        document.getElementById('t4').innerHTML = 'The value of tan 30 degree is ' + value3;
+        var value4 = Math.round(5.6);
+        document.getElementById('t5').innerHTML = 'Rounding-Off: ' + value4;
+        var value5 = Math.ceil(9.1);
+        document.getElementById('t6').innerHTML = 'Math-Ceil: ' + value5;
+        var value6 = Math.floor(7.8);
+        document.getElementById('t7').innerHTML = 'Math-Floor: ' + value6;
+    </script>
+</body>
+</html>

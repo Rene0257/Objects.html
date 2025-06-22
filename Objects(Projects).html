@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Finding out the sum of all numbers with the help of argument objects and using trignometric functions.</p>
+    <p id="result"></p>
+    <script>
+        function sumAll(){
+            var i;
+            var sum = 0;
+            for(i=0; i<arguments.length; i++){
+                sum += arguments[i];
+            }
+            return sum;
+        }
+        document.getElementById("result").innerHTML = "The sum of the numbers is: " +  sumAll(12,42,80);
+        var value = Math.ceil(Math.sin(45));
+        document.write("The value of sin 45: " + value + "<br>");
+        var value1 = Math.ceil(Math.cos(90));
+        document.write("The valus of cos 90: " + value1 + "<br>");
+        var value2 = Math.ceil(Math.tan(60));
+        document.write("The value of tan 60: " + value2 + "<br>");
+    </script>
+</body>
+</html>
